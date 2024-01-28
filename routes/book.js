@@ -1,13 +1,12 @@
 const { Router } = require('express')
+const { getLivros, getLivroForId, postBook } = require('../controllers/book')
+const { getBook } = require('../service/book')
 const router = Router()
 
-router.get('/', (req, res) => {
-  res.send('My Books!') 
-}) // Buscar dados na api
+router.get('/', getLivros) // Buscar dados na "database" todos os livros
+router.get('/:id', getLivroForId) // busca no banco de dados apenas um livro com referencia com o id
 
-router.post('/', (req, res) => {
-    res.send('Testando enviando uam requisição')
-}) // Enviar dados na api
+router.post('/', postBook) // Enviar dados na api
     
 router.patch('/', (req, res) => { 
     res.send('Testando enviando um patch')
