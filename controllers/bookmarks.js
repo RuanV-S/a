@@ -13,7 +13,7 @@ function getBookmarks(req, res) {
   function postBookmarks(req, res) {
     try {
       const id = req.params.id
-      if (req.body) return res.status(422), res.send("A body is needed");  
+      if (id && !Number(id)) return res.status(422), res.send("A id is needed");  
       postBookmarkForId(id)
       res.status(201);
       res.send("Livro inserido com suceso em nosso banco");

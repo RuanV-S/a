@@ -5,6 +5,6 @@ const { postBookmarks, deleteBookmark, getBookmarks } = require('../controllers/
 const routerBookmarks = Router()
 
 routerBookmarks.get('/',getBookmarks)
-routerBookmarks.post('/', postBookmarks)
+routerBookmarks.post('/:id', postBookmarks)
 routerBookmarks.delete('/:id', deleteBookmark)
 module.exports = routerBookmarks

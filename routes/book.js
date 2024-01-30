@@ -10,7 +10,4 @@ router.post('/', postBook) // Enviar dados na api
 router.patch('/:id', patchBook) // Editar dados na api
 router.delete('/:id', deleteBook) // Deletar dados na api
 
-router.get('/favoritos/',getBookmarks)
-router.post('/favoritos/', postBookmarks)
-router.delete('/favoritos/:id', deleteBookmark)
 module.exports = router
