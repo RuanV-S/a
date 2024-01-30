@@ -3,13 +3,13 @@ function getAllBookmarks() {
     return JSON.parse(fs.readFileSync("bookmarks.json"))
 }
 
-function deleteBookmark(id) {
+function deleteBookmarkForId(id) {
     const book = JSON.parse(fs.readFileSync("bookmarks.json"))
     const bookFilter = book.filter(b => b.id !== id)
     fs.writeFileSync("bookmarks.json", JSON.stringify(bookFilter))
 }
 
-function postBookmark(id) {
+function postBookmarkForId(id) {
     const bookMark = JSON.parse(fs.readFileSync("bookmarks.json"))
     const books = JSON.parse(fs.readFileSync("database.json"))
 
@@ -19,5 +19,6 @@ function postBookmark(id) {
 }
 module.exports = {
     getAllBookmarks,
-    deleteBookmark
+    deleteBookmarkForId,
+    postBookmarkForId
 }
