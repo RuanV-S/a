@@ -7,4 +7,4 @@ const routerBookmarks = Router()
 routerBookmarks.get('/',getBookmarks)
 routerBookmarks.post('/:id', postBookmarks)
 routerBookmarks.delete('/:id', deleteBookmark)
-module.exports = routerBookmarkshu
+module.exports = routerBookmarks
