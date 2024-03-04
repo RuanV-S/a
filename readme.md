@@ -11,8 +11,6 @@ Este projeto é a interface de usuário construída em React para gerenciar um B
 
 ## Tecnologias Utilizadas
 
-- **React:** Utilizei a biblioteca React para construir a interface do usuário de forma eficiente e reativa.
-- **Estilização com CSS:** Estilizei a interface com CSS para proporcionar uma experiência visual agradável.
 - **Integração com API:** Conectei a interface do usuário à API da Bookstore para garantir a sincronização de dados.
 
 ## Como Usar
