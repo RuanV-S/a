@@ -21,4 +21,4 @@ Este projeto é a interface de usuário construída em React para gerenciar um B
 4. Acesse o aplicativo em seu navegador através do endereço `http://localhost:8000`.
 
 ## Acesse o front end da API 
-[BookStore Front-END](https://github.com/RuanV-S/bookstore-api)
+[BookStore Front-END](https://github.com/RuanV-S/bookstore-react)
